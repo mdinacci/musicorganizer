@@ -1,0 +1,18 @@
+musicorganizer
+
+Given a source directory read the ID3 tags inside MP3 files and create
+the following directory structure:
+
+Artist
+    Album1
+        song1.mp3
+        song2.mp3
+    Album2
+
+Artist2
+    ...
+
+Unknown Artist
+    Unknown Album
+        Unknown Title.mp3
+        Unknown Title1.mp3
