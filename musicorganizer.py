@@ -82,7 +82,11 @@ def arrange_song(song,target_dir):
         number = 0
         if '_' in name:
             name, number = name.split('_')
-            number = int(number)
+            try:
+                number = int(number) + 1
+            except:
+                print "Can't copy %s" % number
+                continue
         dest_file = "%s_%s.%s" % (name,number,ext)
     
     shutil.move(song.filename, dest_file)
